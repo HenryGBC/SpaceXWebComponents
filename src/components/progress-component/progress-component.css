@@ -1,0 +1,38 @@
+.progress-item {
+  font-family: system-ui;
+  color: #fff;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.progress-item .progress-item__content {
+  width: 50%;
+}
+
+.progress-item .progress-item__title {
+  margin: 0;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+.progress-item .progress-item__bar {
+  width: 100%;
+  height: 10px;
+  background-color: #1d1e3c;
+  border-radius: 7px;
+  position: relative;
+}
+.progress-item .progress-item__bar .bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  border-radius: 7px;
+  transition: all 0.2s ease-in;
+}
+
+.progress-item .progress-item__value {
+  margin: 0;
+  margin-left: 13px;
+}

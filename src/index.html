@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/spacexcomponents.esm.js"></script>
+    <script nomodule src="/build/spacexcomponents.js"></script>
+
+    <style>
+      body {
+        background-color: #13142c;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 300px 1fr 300px;
+        margin-bottom: 100px;
+        padding: 26px;
+      }
+      .charts .first-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .charts .second-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        position: relative;
+      }
+      .mt {
+        margin-top: 25px;
+      }
+      item-component {
+        display: block;
+      }
+      progress-component {
+        display: block;
+      }
+
+      .space-rocket {
+        width: 470px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="items">
+        <item-component class="mt" name="THERMAL SHIELD" status="awaiting"></item-component>
+
+        <item-component class="mt" name="THERMAL SHIELD" status="awaiting"></item-component>
+
+        <item-component class="mt" name="THERMAL SHIELD" status="awaiting"></item-component>
+
+        <item-component class="mt" name="THERMAL SHIELD" status="awaiting"></item-component>
+      </div>
+      <div class="charts">
+        <div class="first-grid">
+          <chart-component name="Cabin Temp" value="12.41" unit="°C" percentage="20%" color="#E72D2D"></chart-component>
+          <chart-component name="Co2" value="12.41" unit="mmHg" percentage="40%" color="#298BFE"></chart-component>
+          <chart-component name="Cabin Pressure" value="12.41" unit="psia" percentage="60%" color="#FFD630"></chart-component>
+          <chart-component name="Cabin Pressure" value="12.41" unit="psia" percentage="60%" color="#FFD630"></chart-component>
+        </div>
+        <div class="second-grid mt">
+          <chart-component size="sm" name="Cabin Temp" value="12.41" unit="°C" percentage="20%" color="#E72D2D"></chart-component>
+          <chart-component size="sm" name="Co2" value="12.41" unit="mmHg" percentage="40%" color="#298BFE"></chart-component>
+          <div></div>
+          <chart-component size="sm" name="Cabin Pressure" value="12.41" unit="psia" percentage="60%" color="#FFD630"></chart-component>
+          <chart-component size="sm" name="Cabin Pressure" value="12.41" unit="psia" percentage="60%" color="#FFD630"></chart-component>
+          <div class="space-rocket">
+            <img src="./assets/img/rocket.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <progress-component class="mt" name="Inertial Velocity" value="7.70 km/s" percentage="70%"></progress-component>
+        <progress-component class="mt" name="Inertial Velocity" value="7.70 km/s" percentage="70%"></progress-component>
+        <progress-component class="mt" name="Inertial Velocity" value="7.70 km/s" percentage="70%"></progress-component>
+        <progress-component class="mt" name="Inertial Velocity" value="7.70 km/s" percentage="70%"></progress-component>
+        <progress-component class="mt" name="Inertial Velocity" value="7.70 km/s" percentage="70%"></progress-component>
+
+        <progress-component class="mt" name="Inertial Velocity" value="7.70 km/s" percentage="70%"></progress-component>
+        <progress-component class="mt" name="Inertial Velocity" value="7.70 km/s" percentage="70%"></progress-component>
+        <progress-component class="mt" name="Inertial Velocity" value="7.70 km/s" percentage="70%"></progress-component>
+
+        <progress-component class="mt" name="Inertial Velocity" value="7.70 km/s" percentage="70%"></progress-component>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+.item {
+  font-family: system-ui;
+  display: flex;
+  align-items: center;
+}
+.item__circle {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9499c3;
+  border-radius: 50%;
+}
+.item__circle span {
+  color: black;
+}
+.item__text {
+  margin: 0 0 0 15px;
+}
+.item__text p {
+  margin: 0;
+}
+.item__text-title {
+  color: #9499c3;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.item__text-status {
+  color: #9499c3;
+  text-transform: capitalize;
+}
+
+.item__circle.applied {
+  background-color: #40c110;
+}
+.item__circle.awaiting {
+  background-color: #ea7b15;
+}
+.item__circle.normal {
+  background-color: #9499c3;
+}
+
+.item__text-status.applied {
+  color: #ffffff;
+}
+.item__text-status.awaiting {
+  color: #ffffff;
+}
+.item__text-status.normal {
+  color: #9499c3;
+}
